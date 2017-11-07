@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio Pinterest</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://use.fontawesome.com/8c2b53371e.js"></script>
+
+</head>
+<style type="text/css">
+	*{
+
+	}
+
+</style>
+
+<body>
+
+
+<!-- Nav Pinterest -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <i style="font-size: 25px" class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      
+      <a class="navbar-brand" href="#"><img src="https://i.pinimg.com/736x/92/fd/59/92fd59efefc446c7e858ebd16c53feba--pinterest-logo-png-pinterest-board.jpg" width="22px"></a>
+    </div>
+
+    <!-- Collect  -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left" width="100%">
+        <div  class="form-group">
+          <input  type="text" class="form-control" placeholder="Buscar">
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Inicio</a></li>
+        <li><a><img src="https://s-media-cache-ak0.pinimg.com/avatars/rymesz_1485131068_280.jpg" width="25px" height="25px" style="border-radius: 50%"> Mery </a></li>
+        <li><a href=""><i style="font-size: 25px" class="fa fa-bars" aria-hidden="true"></i></a></li>
+        <li><a href=""><i style="font-size: 25px" class="fa fa-commenting-o" aria-hidden="true"></i></a></li>
+        <li><a href=""><i style="font-size: 25px" class="fa fa-list" aria-hidden="true"></i></a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container-fluid"> 
+	<div style="column-fill: auto">
+		<div class="lista_de_imagenes" ></div>
+	</div>
+</div>
+
+	<div class="lista_de_youtube_2" ></div>
+
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.js"
+		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="plugin.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			
+			$('.lista_de_imagenes').pinterest(
+				[
+					"i.pinimg.com/564x/46/c5/b0/46c5b0c12aaa8b8942d2e6e8cb19abd4.jpg", 
+					"i.pinimg.com/564x/e8/15/48/e815486794a21b8e349ae8dc1da6705d.jpg", 
+					"i.pinimg.com/564x/fa/9c/5b/fa9c5b012792286e88e898805958ab9b.jpg",
+					"i.pinimg.com/564x/46/c5/b0/46c5b0c12aaa8b8942d2e6e8cb19abd4.jpg", 
+					"i.pinimg.com/564x/e8/15/48/e815486794a21b8e349ae8dc1da6705d.jpg", 
+					"i.pinimg.com/564x/fa/9c/5b/fa9c5b012792286e88e898805958ab9b.jpg",
+					"i.pinimg.com/564x/46/c5/b0/46c5b0c12aaa8b8942d2e6e8cb19abd4.jpg", 
+					"i.pinimg.com/564x/e8/15/48/e815486794a21b8e349ae8dc1da6705d.jpg", 
+					"i.pinimg.com/564x/fa/9c/5b/fa9c5b012792286e88e898805958ab9b.jpg",
+					"i.pinimg.com/564x/46/c5/b0/46c5b0c12aaa8b8942d2e6e8cb19abd4.jpg", 
+					"i.pinimg.com/564x/e8/15/48/e815486794a21b8e349ae8dc1da6705d.jpg", 
+					"i.pinimg.com/564x/fa/9c/5b/fa9c5b012792286e88e898805958ab9b.jpg"
+				],
+				275
+			);
+		});
+	</script>
+
+</body>
+</html>
